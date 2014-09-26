@@ -1,5 +1,7 @@
 import java.util.Scanner;
-
+import javax.swing.JOptionPane;
+// Nama Dwi Apriyanto 1127050045
+// Nama Firman Abdurrahman 1127050061
 public class KonversiBilangan {
 		static String name; 
 			static int bilDes;
@@ -45,6 +47,7 @@ public class KonversiBilangan {
 					Oktal(bilDes);
 		}
 			public static int inpBil(){
+						System.out.println("" + "\n================ Selamat datang Pak " + name + " di konversi bilanggan =================\n");
 							System.out.println("Silahkan Memilih Menu Konversi Bilangan ke: " + "\n1. Biner  \n2. Hexa \n3. Oktal \n4. Exit");
 							System.out.print("\n-------------------------------------");
 							System.out.print("\nMasukkan Angka Dari Menu Di Atas = ");
@@ -66,8 +69,11 @@ public class KonversiBilangan {
 				System.out.println(" ");
 		}
 		public static void main(String arg[]){
+				name=JOptionPane.showInputDialog("Tuliskan Nama Anda :");
+			do
 				{
 				menu(inpBil());
 				}
+			while(true);
         }
 }
